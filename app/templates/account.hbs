@@ -58,8 +58,8 @@
 
   <div id="administerable-hooks">
     <ul class="profile-hooklist">
-      {{#each hooks as |hook|}}
-        {{repository-status-toggle hook=hook}}
+      {{#each hooks as |repo|}}
+        {{repository-status-toggle hook=repo}}
       {{else}}
         <li>
           {{#if hooksWithoutAdmin.length}}
