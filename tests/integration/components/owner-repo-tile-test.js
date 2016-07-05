@@ -11,19 +11,19 @@ test('it renders', function() {
     slug: "travis-ci/travis-chat",
     active: false,
     "private": false,
-		currentBuild: {
-			number: "25",
-			state: "passed",
-			duration: 252,
-			event_type: "push",
-			previous_state: "passed",
-			started_at: "2013-07-08T11:03:19Z",
-			finished_at: "2013-07-08T11:06:50Z",
-			commit: {
-				sha: "16fff347ff55403caf44c53357855ebc32adf95d",
-				compare_url: "https://github.com/travis-ci/travis-chat/compare/3c4e9ea50141...16fff347ff55"
-			}
-		},
+    currentBuild: {
+      number: "25",
+      state: "passed",
+      duration: 252,
+      event_type: "push",
+      previous_state: "passed",
+      started_at: "2013-07-08T11:03:19Z",
+      finished_at: "2013-07-08T11:06:50Z",
+      commit: {
+        sha: "16fff347ff55403caf44c53357855ebc32adf95d",
+        compare_url: "https://github.com/travis-ci/travis-chat/compare/3c4e9ea50141...16fff347ff55"
+      }
+    },
     default_branch: {
       name: "master",
       last_build: {
