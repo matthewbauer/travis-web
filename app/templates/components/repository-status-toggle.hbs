@@ -1,5 +1,5 @@
 <div class="profile-hooks profile-switch">
-  {{hook-switch repo=repo onToggleError="handleToggleError" onToggle="resetErrors"}}
+  {{repository-toggle repo=repo onToggleError="handleToggleError" onToggle="resetErrors"}}
   {{#if repo.isSaving}}
     {{loading-indicator inline=true}}
   {{else}}
