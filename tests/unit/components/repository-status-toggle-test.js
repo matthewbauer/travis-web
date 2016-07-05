@@ -1,5 +1,5 @@
 import { test, moduleForComponent } from 'ember-qunit';
-moduleForComponent('hooks-list-item', 'HooksListItemComponent', {
+moduleForComponent('repository-status-toggle', 'RepositoryStatusToggle', {
   needs: ['component:hook-switch']
 });
 
