@@ -6,13 +6,13 @@ export default Ember.Component.extend({
   tagName: 'a',
   classNames: ['switch--icon'],
   classNameBindings: ['active'],
-  active: alias('hook.active'),
+  active: alias('repo.active'),
   click() {
     this.sendAction('onToggle');
-    let hook = this.get('hook');
-    return hook.toggle().then((function() {}), () => {
-      this.toggleProperty('hook.active');
-      return this.sendAction('onToggleError', hook);
+    let repo = this.get('repo');
+    return repo.toggle().then((function() {}), () => {
+      this.toggleProperty('repo.active');
+      return this.sendAction('onToggleError', repo);
     });
   }
 });
