@@ -22,5 +22,5 @@ test('it renders', function() {
 
   ok(this.$().find('li.row').hasClass('active'), 'component should have active class');
   ok(this.$().find('.switch--icon').hasClass('active'), 'switch should have active class');
-  return equal(this.$().find('.profile-repo span').text().trim(), 'A foo repo', 'repo description should be displayed');
+  equal(this.$().find('.profile-repo span').text().trim(), 'A foo repo', 'repo description should be displayed');
 });
