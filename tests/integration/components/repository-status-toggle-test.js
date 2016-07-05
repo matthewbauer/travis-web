@@ -18,7 +18,7 @@ test('it renders', function() {
   });
 
   this.set('repo', repo);
-  this.render(hbs`{{repository-status-toggle hook=repo}}`);
+  this.render(hbs`{{repository-status-toggle repo=repo}}`);
 
   ok(this.$().find('li.row').hasClass('active'), 'component should have active class');
   ok(this.$().find('.switch--icon').hasClass('active'), 'switch should have active class');

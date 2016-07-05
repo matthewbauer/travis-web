@@ -4,7 +4,7 @@ import config from 'travis/config/environment';
 export default Ember.Component.extend({
   tagName: 'li',
   classNames: ['row'],
-  classNameBindings: ['hook.active:active'],
+  classNameBindings: ['repo.active:active'],
   githubOrgsOauthAccessSettingsUrl: config.githubOrgsOauthAccessSettingsUrl,
 
   actions: {
